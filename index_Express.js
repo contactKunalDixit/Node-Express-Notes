@@ -106,7 +106,7 @@ app.get('/', (req, res) => {
 todo: EXPRESS PATH PARAMETERS:
 We cant really specify each path for each of the page as there can be multiple pages in a website so instead we define a pattern, thus we work on a better mechanism of defining a variable path parameter
 */
-/* in below, '/r/:' is pattern the server will search for when the requests is received. localhost:8080/r/cat and localhost:8080/r/dogs will get accounted for and will be considered but localhost:8080/cat and localhost:8080/dog will not be considered
+/* in below, '/r/:' is pattern the server will search for when the requests is received(especially anything that comes after ":"). localhost:8080/r/cat and localhost:8080/r/dogs will get accounted for and will be considered but localhost:8080/cat and localhost:8080/dog will not be considered
 
 so in short, anything that follows /r/: will be considered
 Remember the importance of ":"
